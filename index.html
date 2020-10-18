@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>BeyondX Course Registeration</title>
+        <style>
+            body{
+              background:url(bg.jpg);
+              background-repeat:no repeat;
+              font-size: 20px;
+          
+            }
+            table{
+                font-size:20Px;
+                background-color: rgba(240, 162, 17, 0.897);
+            }
+            form{
+                margin:130px;
+                
+            }
+            input, select, textarea{
+                border: 2px solid lightcoral;
+            }
+            h1{
+                background:  rgba(240, 162, 17, 0.897);
+            }
+            input,textarea{
+                font-size: 20px;
+            }
+
+        </style>
+    </head>
+    <body>
+      <center>
+        <h1><marquee>BeyondX Course Registeration</marquee> </h1>
+        <form method="post" action="reg.php">
+       
+     <table>
+        
+        <tr>
+            <td> NAME: </td>
+            <td><input type="text" name="fname">
+        </tr>
+        <tr>
+            <td> EMAIL </td>
+            <td><input type="text" name="email"></tr>
+        <tr>
+        <tr>
+            <td> PASSWORD:</td> 
+            <td><input type="password" name="password"></td>
+        </tr>
+        <tr>
+            <td> COLLEGE:</td>
+            <td><input type="text" name="clg"></td>
+        </tr>
+        <tr>
+            <td>DEPARTMENT:</td>
+            <td><select name="dropdown">
+            <option value="CSE">CSE</option>
+            <option value="IT">IT</option>
+            <option value="EEE">EEE</option>
+            <option value="ECE">ECE</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td>Course:</td>
+            <td>
+               <input type="radio" name="course" value="web">HTML, CSS, JAVASCRIPT<br>
+               <input type="radio" name="course" value="backend">PHP and MYSQL<br>
+               <input type="radio" name="course" value="design"> UI & UX<br>
+               <input type="radio" name="course" value="python"> python <br>
+               <input type="radio" name="course" value="C"> C programming</td>
+        </tr>
+           <td><input type="submit" value="SUBMIT"></td>
+        </tr> 
+        <tr>
+       <td> <a href="login.html">login</a></td></tr>
+     </table>
+     
+      </center>
+    </form>
+      
+    </body>
+</html>
